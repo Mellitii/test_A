@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Cuisine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            margin: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delta cuisine</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#products">Produits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Bienvenue chez Delta cuisine. Nous offrons les meilleurs meubles pour votre cuisine, alliant design et fonctionnalité.</p>
+    </section>
+    <section id="products">
+        <h2>Nos Produits</h2>
+        <p>Découvrez notre gamme de meubles de cuisine, conçus pour améliorer votre espace de vie.</p>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour plus d'informations, veuillez nous contacter via notre formulaire ou par téléphone.</p>
+    </section>
+    <footer>
+        © 2024 Delta Cuisine. Tous droits réservés.
+    </footer>
+
+    <!-- Widget JavaScript bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=fr"></script>
+
+<!-- Search widget element is not visible by default -->
+<gen-search-widget
+  configId="52747a74-f7c0-4118-9678-668669b4a387"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+<!-- Element that opens the widget on click. It does not have to be an input -->
+<input placeholder="Je suis l'agent intelligent de delta cuisine, n'hésitez pas à me poser des questions" id="searchWidgetTrigger" />
+</body>
+</html>
