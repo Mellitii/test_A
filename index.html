@@ -79,5 +79,29 @@
 
 <!-- Element that opens the widget on click. It does not have to be an input -->
 <input placeholder="Je suis l'agent intelligent de delta cuisine, n'hésitez pas à me poser des questions" id="searchWidgetTrigger" style="margin: 20px; padding: 10px; width: 80%;" />
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="future-grove-422014"
+  agent-id="f299a5f1-8312-425d-a82e-3e796564583b"
+  language-code="fr"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
 </body>
 </html>
